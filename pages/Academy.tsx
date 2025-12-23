@@ -152,17 +152,17 @@ const Academy: React.FC = () => {
             {/* Contact Section */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-6xl mx-auto bg-brand-dark rounded-[2.5rem] p-8 md:p-16 lg:p-20 overflow-hidden relative">
+                    <div className="max-w-6xl mx-auto bg-brand-light rounded-[2.5rem] p-8 md:p-16 lg:p-20 overflow-hidden relative">
                         {/* Background Effects */}
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-lime/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2" />
+                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white rounded-full blur-[80px] pointer-events-none -translate-y-1/2 translate-x-1/2 opacity-60" />
                         
-                        <div className="relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <div className="relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                             {/* Contact Info */}
                             <div className="space-y-8">
-                                <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
+                                <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-brand-dark leading-tight">
                                     Wil jij contextbewustzijn in jullie leiderschapsontwikkeling integreren?
                                 </h2>
-                                <div className="space-y-6 text-lg text-white/80 leading-relaxed">
+                                <div className="space-y-6 text-lg text-brand-muted leading-relaxed">
                                     <p>
                                         De academy biedt dé basis voor een vernieuwend onderwijsprogramma.
                                     </p>
@@ -171,13 +171,13 @@ const Academy: React.FC = () => {
                                     </p>
                                 </div>
                                 <div className="hidden lg:flex items-center gap-4 text-brand-lime pt-4">
-                                     <span className="font-serif italic text-lg">Neem contact op</span>
+                                     <span className="font-serif italic text-lg font-medium">Neem contact op</span>
                                      <ArrowRight className="w-6 h-6" />
                                 </div>
                             </div>
 
                             {/* Contact Form */}
-                            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-2xl">
+                            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-gray-100">
                                 <h3 className="font-serif text-3xl text-brand-dark italic mb-8 text-center">Stel jouw vraag</h3>
                                 <form className="space-y-6">
                                     <div className="grid md:grid-cols-2 gap-6">
