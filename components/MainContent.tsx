@@ -132,19 +132,19 @@ const MainContent: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 pt-16 border-t border-gray-100 flex-wrap">
              <Button 
               label="Boek een inspiratieworkshop" 
-              href="#" 
+              href="/producten" 
               variant="primary"
               className="w-full md:w-auto min-w-[300px] text-lg py-4 shadow-lg shadow-brand-lime/20 hover:shadow-brand-lime/40"
             />
             <Button 
               label="Ontdek hoe contextmanagement werkt" 
-              href="#" 
+              href="/wat-is-contextmanagement" 
               variant="secondary"
               className="w-full md:w-auto min-w-[260px]"
             />
             <Button 
               label="Wij zoeken pilot-organisaties!" 
-              href="#" 
+              href="/team" 
               variant="outline"
               className="w-full md:w-auto min-w-[260px]"
             />
