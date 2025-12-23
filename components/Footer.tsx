@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
           {/* Column 1: Links */}
           <div className="flex flex-col space-y-4">
             <h4 className="font-serif text-xl text-brand-lime mb-2">Navigatie</h4>
-            <a href="#" className="hover:text-brand-lime transition-colors w-fit">Team</a>
-            <a href="#" className="hover:text-brand-lime transition-colors w-fit">Blogs</a>
-            <a href="#" className="hover:text-brand-lime transition-colors w-fit">Contact</a>
+            <Link to="/team" className="hover:text-brand-lime transition-colors w-fit">Team</Link>
+            <Link to="/blogs" className="hover:text-brand-lime transition-colors w-fit">Blogs</Link>
+            <Link to="/team" className="hover:text-brand-lime transition-colors w-fit">Contact</Link>
           </div>
 
           {/* Column 2: Contact */}

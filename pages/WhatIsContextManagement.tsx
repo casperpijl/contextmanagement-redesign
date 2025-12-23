@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Box, Layers, MessageSquare, ArrowRight, User, Users, Briefcase, FileText } from 'lucide-react';
+import { User, Users, Briefcase, FileText } from 'lucide-react';
 import { IMAGES } from '../constants';
 
 const WhatIsContextManagement: React.FC = () => {
@@ -30,47 +30,88 @@ const WhatIsContextManagement: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-brand-light">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Card 1: Focus */}
-            <div className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50">
-                <div className="mb-6 inline-flex p-4 rounded-xl bg-brand-lime/20 text-brand-dark group-hover:bg-brand-lime group-hover:scale-110 transition-all duration-300">
-                    <Target size={32} />
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden">
+                <div className="h-64 overflow-hidden">
+                    <img 
+                        src={IMAGES.concepts.focus} 
+                        alt="Focus klein voor groot resultaat" 
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
                 </div>
-                <h3 className="font-serif text-2xl text-brand-dark mb-4 group-hover:text-brand-muted transition-colors">Focus klein voor groot resultaat.</h3>
-                <p className="font-sans text-brand-muted leading-relaxed">
-                    Contextmanagement is een praktische methode om gedrag en samenwerking binnen organisaties in een gewenste richting te beïnvloeden, zonder de focus te leggen op het individu. In plaats daarvan kijk je gericht naar de context waarin mensen werken.
-                </p>
+                <div className="p-8">
+                    <h3 className="font-serif text-2xl text-brand-dark mb-4 italic">Focus klein voor groot resultaat.</h3>
+                    <div className="space-y-4 font-sans text-brand-muted leading-relaxed">
+                        <p>
+                            Contextmanagement is een praktische methode om gedrag en samenwerking binnen organisaties in een gewenste richting te beïnvloeden, zonder de focus te leggen op het individu. In plaats daarvan kijk je gericht naar de context waarin mensen werken.
+                        </p>
+                        <p>
+                            Omdat gedrag altijd logisch is binnen de omstandigheden waarin het ontstaat, kun je met kleine goed gekozen contextveranderingen snel gewenste resultaten mogelijk maken.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             {/* Card 2: Bouwstenen */}
-            <div className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50">
-                <div className="mb-6 inline-flex p-4 rounded-xl bg-violet-100 text-violet-700 group-hover:bg-violet-200 group-hover:scale-110 transition-all duration-300">
-                    <Box size={32} />
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden">
+                <div className="h-64 overflow-hidden">
+                     <img 
+                        src={IMAGES.concepts.bouwstenen} 
+                        alt="De bouwstenen: vier contexten" 
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
                 </div>
-                <h3 className="font-serif text-2xl text-brand-dark mb-4 group-hover:text-brand-muted transition-colors">De bouwstenen: vier contexten</h3>
-                <p className="font-sans text-brand-muted leading-relaxed">
-                    Contextmanagement is gestoeld op de evolutionaire psychologie. Mensen hebben van nature verschillende randvoorwaarden nodig om tot samenwerking te komen en deze ook vast te houden. Deze randvoorwaarden zijn vertaald naar vier contextperspectieven.
-                </p>
+                <div className="p-8">
+                    <h3 className="font-serif text-2xl text-brand-dark mb-4 italic">De bouwstenen: vier contexten</h3>
+                    <div className="space-y-4 font-sans text-brand-muted leading-relaxed">
+                        <p>
+                            Contextmanagement is gestoeld op de evolutionaire psychologie. Mensen hebben van nature verschillende randvoorwaarden nodig om tot samenwerking te komen en deze ook vast te houden. Deze randvoorwaarden zijn vertaald naar vier contextperspectieven, ieder concreet gemaakt met een eigen tool.
+                        </p>
+                        <p>
+                            De toolbox vormt dus dé ondersteuning voor het maken van weloverwogen contextkeuzes.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             {/* Card 3: Niveaus */}
-            <div className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50">
-                <div className="mb-6 inline-flex p-4 rounded-xl bg-blue-100 text-blue-700 group-hover:bg-blue-200 group-hover:scale-110 transition-all duration-300">
-                    <Layers size={32} />
+            <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden">
+                <div className="h-64 overflow-hidden">
+                    <img 
+                        src={IMAGES.concepts.niveaus} 
+                        alt="Drie niveaus van invloed" 
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
                 </div>
-                <h3 className="font-serif text-2xl text-brand-dark mb-4 group-hover:text-brand-muted transition-colors">Drie niveaus van invloed</h3>
-                <p className="font-sans text-brand-muted leading-relaxed">
-                    Context in organisaties is gelaagd – net als de invloed die je erop kunt uitoefenen. Contextmanagement vraagt daarom om een scherpe blik: kun je een bepaalde contextfactor zélf veranderen? Kun je een andere besluitvormer erover informeren?
-                </p>
+                <div className="p-8">
+                    <h3 className="font-serif text-2xl text-brand-dark mb-4 italic">Drie niveaus van invloed</h3>
+                    <div className="space-y-4 font-sans text-brand-muted leading-relaxed">
+                        <p>
+                            Context in organisaties is gelaagd – net als de invloed die je erop kunt uitoefenen. Contextmanagement vraagt daarom om een scherpe blik: kun je een bepaalde contextfactor zélf veranderen? Kun je een andere besluitvormer erover informeren? Of is de aanwezige context accepteren de enige optie?
+                        </p>
+                        <p>
+                            Hoe helderder deze afweging, hoe krachtiger de samenwerking en communicatie tussen mandaatlagen. Deze samenwerking vormt de basis van <a href="/contextgestuurde-organisatie" className="text-brand-gold font-bold underline hover:text-brand-dark transition-colors">de contextgestuurde organisatie</a>.
+                        </p>
+                    </div>
+                </div>
             </div>
 
              {/* Card 4: Besluiten */}
-             <div className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50">
-                <div className="mb-6 inline-flex p-4 rounded-xl bg-orange-100 text-orange-700 group-hover:bg-orange-200 group-hover:scale-110 transition-all duration-300">
-                    <MessageSquare size={32} />
+             <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100/50 overflow-hidden">
+                <div className="h-64 overflow-hidden">
+                    <img 
+                        src={IMAGES.concepts.dialogen} 
+                        alt="Scherpe dialogen, betere besluiten" 
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    />
                 </div>
-                <h3 className="font-serif text-2xl text-brand-dark mb-4 group-hover:text-brand-muted transition-colors">Scherpe dialogen, betere besluiten</h3>
-                <p className="font-sans text-brand-muted leading-relaxed">
-                    Contextmanagement daagt uit tot snelle focus en besluitvorming. Geen grootschalige en stroperige analyses, maar een snelle loop van actie, evaluatie en bijstellen. De grote versneller zit in het gedeelde denkraam.
-                </p>
+                <div className="p-8">
+                    <h3 className="font-serif text-2xl text-brand-dark mb-4 italic">Scherpe dialogen, betere besluiten</h3>
+                    <div className="space-y-4 font-sans text-brand-muted leading-relaxed">
+                        <p>
+                            Contextmanagement daagt uit tot snelle focus en besluitvorming. Geen grootschalige en stroperige analyses, maar een snelle loop van actie, evaluatie en bijstellen. De grote versneller zit in het gedeelde denkraam, een gemeenschappelijke taal en creatieve tools. Deze zorgen ervoor dat er geen ruis ontstaat in de woorden die worden gebruikt en wat ermee wordt bedoeld.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
       </section>
