@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CONTACT_INFO } from '../constants';
 import { Linkedin, Mail, Phone } from 'lucide-react';
 
@@ -50,9 +51,13 @@ const Footer: React.FC = () => {
 
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>© {new Date().getFullYear()} Context Management.</p>
-          <a href="#" className="mt-2 md:mt-0 hover:text-white underline decoration-brand-lime decoration-1 underline-offset-4 transition-colors">
-            Algemene voorwaarden
-          </a>
+          <div className="flex gap-4 mt-2 md:mt-0">
+             <Link to="/" className="hover:text-white underline decoration-brand-lime decoration-1 underline-offset-4 transition-colors">Home</Link>
+             <Link to="/wat-is-contextmanagement" className="hover:text-white underline decoration-brand-lime decoration-1 underline-offset-4 transition-colors">Wat is Contextmanagement?</Link>
+             <a href="#" className="hover:text-white underline decoration-brand-lime decoration-1 underline-offset-4 transition-colors">
+                Algemene voorwaarden
+             </a>
+          </div>
         </div>
       </div>
     </footer>

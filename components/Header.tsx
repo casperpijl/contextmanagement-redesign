@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { NAV_ITEMS, IMAGES } from '../constants';
 import { Menu, X } from 'lucide-react';
 
@@ -12,25 +13,25 @@ const Header: React.FC = () => {
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="flex items-center gap-2 group">
+            <Link to="/" className="flex items-center gap-2 group">
               <img 
                 src={IMAGES.logo} 
                 alt="Context Management Logo" 
                 className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex space-x-8">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-brand-dark hover:text-brand-lime font-sans font-medium text-sm uppercase tracking-wide transition-colors duration-200"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -51,14 +52,14 @@ const Header: React.FC = () => {
       <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="px-4 pt-2 pb-6 space-y-2 bg-brand-light shadow-inner">
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="block px-3 py-3 text-base font-medium text-brand-dark hover:bg-gray-50 hover:text-brand-lime rounded-md transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
